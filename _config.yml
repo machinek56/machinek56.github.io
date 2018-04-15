@@ -19,8 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Небольшие заметки вокруг современного frontend'a и все, что с ним связано.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  machinek56
 
 # Build settings
 markdown: kramdown
@@ -28,6 +27,7 @@ theme: minima
 plugins:
   - jekyll-feed
 
+show_excerpts: true
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
