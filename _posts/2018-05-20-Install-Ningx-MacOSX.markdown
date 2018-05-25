@@ -78,7 +78,8 @@ touch /usr/local/etc/nginx/sites-available/project.local
 Вставляем туда конфиг
 ```
 server {
-  listen                *:80;
+  listen                80;
+  listen                [::]:80;
   server_name           project.local;
 
   location / {
