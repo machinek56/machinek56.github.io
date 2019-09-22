@@ -78,7 +78,7 @@ PLATFORMS
   x86-mswin32
 
 DEPENDENCIES
-  jekyll (~> 3.7.3)
+  jekyll (~> 3.7.4)
   jekyll-feed (~> 0.6)
   minima (~> 2.3)
   tzinfo-data

@@ -16,7 +16,7 @@
 title: Записки с фронтов
 email: expertantony@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Заметки вокруг современного фронтенда.
+  Заметки вокруг фронтенда.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  machinek56
