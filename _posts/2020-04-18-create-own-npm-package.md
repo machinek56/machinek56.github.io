@@ -13,8 +13,8 @@ categories: npm github
 можно использовать из-за ограничений стендов сборки проекта.
 
 Пример записи в *package.json*: 
-```shell script
-"redux-saga-router": "luistorres/redux-saga-router#dist",
+```bash
+"redux-saga-router": "luistorres/redux-saga-router#dist"
 ```
 
 Другой вариант заключается в создании npm-пакета со своим scope (@username). Обычно берут свой username на гитхабе, но по сути можно написать 
@@ -22,34 +22,36 @@ categories: npm github
 
 Далее нужно поменять имя пакета на `@username/package-name` и увеличить патч версию пакета в *package.json*.
 После этого переходим в консоль:
-```shell script
+```bash
 npm login
 ```
 Вводим свои учетные данные.
 
 Далее пишем команду для публикации:
-```shell script
+```bash
 npm publish
 ```
 Однако так как мы используем scope, нужно дописать флаг `--access public`
 
-```shell script
+```bash
 npm publish --access public
 ```
 
-После окончания процедуры устанавливаем загруженный пакет в свой проект:
-`npm i @username/package-name`
+После окончания процедуры устанавливаем новый пакет в свой проект:
+```bash
+npm i @username/package-name
+```
 
 ----
-
+<br/>
 В моей практике понадобилось завернуть широко используемую в проекте библиотеку в форк. 
 Для этого мне нужно было бы поменять все импорты на другое имя пакета. Чтобы этого избежать, в npm есть возможность установить пакет под другим именем (алиасом):  
 
-```shell script
+```bash
 npm i <alias_name>@npm:<original_package_name>
 ```
 
 Таким образом имя меняется только в *package.json*. Например:
-```shell script
+```bash
  "redux-form": "npm:@machinek56/redux-form@^8.3.1",
 ```
